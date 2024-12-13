@@ -1,0 +1,16 @@
+/* Style for active link */
+.nav-link.active {
+  background-color: #495057;
+  border-radius: 5px;
+}
+
+/* Sidebar styling for smaller screens */
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  transition: all 0.3s ease;
+}
+
+#main-content {
+  transition: margin-left 0.3s ease;
+}

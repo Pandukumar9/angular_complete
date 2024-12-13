@@ -1,0 +1,35 @@
+<div class="d-flex">
+  <!-- Sidebar -->
+  <div id="sidebar" class="bg-dark text-white vh-100 p-3" style="width: 250px;">
+    <button
+      class="btn btn-sm btn-light d-md-none"
+      (click)="toggleSidebar()"
+      style="margin-bottom: 10px;"
+    >
+      Toggle Sidebar
+    </button>
+    <!-- <h5 class="text-center">MyApp</h5> -->
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/mobile" routerLinkActive="active">Mobile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="/ngselect" routerLinkActive="active">ngselect</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="['/mobile']" routerLinkActive="active">Settings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="['/mobile']" routerLinkActive="active">Messages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white" routerLink="['/mobile']" routerLinkActive="active">Logout</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" class="flex-grow-1 p-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
