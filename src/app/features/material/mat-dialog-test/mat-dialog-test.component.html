@@ -1,0 +1,17 @@
+<h1 mat-dialog-title>{{ data.title }}</h1>
+<div mat-dialog-content>
+  <p>Here is the list of users:</p>
+  <ul>
+    @for(user of data.userdata;track user){
+      <li>
+        ID: {{ user.id }}, Name: {{ user.name }}, City: {{ user.city }}
+      </li>
+    }
+  </ul>
+  @if(data.isactive){
+    <p>The data is currently active.</p>
+  }
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Close</button>
+</div>

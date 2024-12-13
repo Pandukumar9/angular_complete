@@ -1,0 +1,8 @@
+<div class="container mt-5">
+  <h2>Dynamic Form with Formly</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit(model)">
+    <formly-form [form]="form" [fields]="fields" [model]="model" [options]="options">
+    </formly-form>
+    <button class="btn btn-primary mt-3" type="submit" [disabled]="!form.valid">Submit</button>
+  </form>
+</div>
